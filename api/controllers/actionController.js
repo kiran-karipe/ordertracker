@@ -17,7 +17,7 @@ exports.index = function(req, res) {
             "RequestOption": "1", "TransactionReference": {
               "CustomerContext": "Your Test Case Summary Description" }
             },
-            "InquiryNumber": req.params.trackingId
+            "InquiryNumber": req.body.trackingId
           }
         })
     }, function(error, response, body) {
