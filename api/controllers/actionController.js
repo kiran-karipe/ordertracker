@@ -2,7 +2,7 @@
 var request = require('request');
 
 exports.index = function(req, res) {
-  console.log("Request Body: " + Object.keys(res.body));
+  console.log("Request Body: " + Object.keys(req.body));
   request
     .post({
       url:'https://wwwcie.ups.com/rest/Track',
