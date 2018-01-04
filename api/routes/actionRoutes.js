@@ -4,5 +4,5 @@ module.exports = function(app) {
 
   // todoList Routes
   app.route('/track')
-    .post(todoList.index)
+    .get(todoList.index)
 }
