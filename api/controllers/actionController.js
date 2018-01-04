@@ -4,7 +4,7 @@ var request = require('request');
 exports.index = function(req, res) {
   console.log("Request Body: " + Object.keys(req.body));
   request
-    .post({
+    .get({
       url:'https://wwwcie.ups.com/rest/Track',
       body: JSON.stringify({
         "UPSSecurity": { "UsernameToken": {
