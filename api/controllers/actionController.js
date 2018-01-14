@@ -1,5 +1,6 @@
 'use strict';
 var request = require('request');
+const dev = require('../config/dev');
 
 exports.index = function(req, res) {
   console.log("Request Body: " + Object.keys(req.body));
@@ -8,10 +9,10 @@ exports.index = function(req, res) {
       url:'https://wwwcie.ups.com/rest/Track',
       body: JSON.stringify({
         "UPSSecurity": { "UsernameToken": {
-          "Username": "kiran.karipe",
-          "Password": "Mahesh12#" },
+          "Username": dev.username,
+          "Password":  dev.password},
           "ServiceAccessToken": {
-            "AccessLicenseNumber": "ED353F2BC9ECDE9D"
+            "AccessLicenseNumber": AccessLicenseNumber
           }
         },
           "TrackRequest": { "Request": {
