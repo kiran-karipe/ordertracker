@@ -12,7 +12,7 @@ exports.index = function(req, res) {
           "Username": dev.username,
           "Password":  dev.password},
           "ServiceAccessToken": {
-            "AccessLicenseNumber": AccessLicenseNumber
+            "AccessLicenseNumber": dev.AccessLicenseNumber
           }
         },
           "TrackRequest": { "Request": {
